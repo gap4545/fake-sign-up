@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+form {
+    background-color: white;
+    width: 100%;
+    height: 30%;
+}
+
+.banner {
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 50vh;
+    background-color: rgb(255,255,255, 0.3);
+}
+
+.banner > img {
+    max-height: 25vh;
+}
+
+.banner > p {
+    font-family: 'Baba Neue', Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 3vw;
+}
+
+.credits > p{
+    margin-bottom: 2vh;
+    opacity: 0.6;
+    color: black;
+    font-size: 1vw;
+    width: fit-content;
+    background-color: rgb(255,255,255, 0.3);
+    padding: 0.1em 0.3em
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: no-repeat center url(./plague_background.jpeg);
+    background-size: 100% 100vh;
+    height: 100vh;
+    width: 35vw;
+}
+
+.left-container > div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10vh;
+    height: 100vh;
+    width: 65vw;
+    background-color: rgb(214, 214, 214);
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.right-container > * {
+    padding: 0 3vw;
+}
+
+.top > p {
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
