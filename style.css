@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+a {
+    color: inherit;
+}
+
 body {
     display: flex;
 }
@@ -14,6 +18,7 @@ form {
     background-color: rgb(243, 243, 243);
     width: 100%;
     gap: 3vh;
+    min-width: fit-content;
 }
 
 input {
@@ -24,6 +29,13 @@ input {
     background: rgb(238, 238, 238);
     border: 2px solid rgb(221, 221, 221);
     border-radius: 5px;
+    padding: 0.25em 1em;
+}
+
+input:focus,
+input:hover {
+    border: 2px solid rgb(114, 2, 2);
+    box-shadow: 2px 4px 3px rgb(155, 155, 155, 0.8);
 }
 
 label {
@@ -46,11 +58,16 @@ label {
 
 .banner > p {
     font-family: 'Baba Neue', Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 3vw;
+    font-size: 2rem;
+}
+
+.bottom {
+    padding: 3vh;
 }
 
 .caption {
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 1.25rem;
     padding: 7vh 0 3vh 0;
 }
 
@@ -78,6 +95,14 @@ label {
     flex-direction: column;
 }
 
+.invalid {
+    border: 2px solid red;
+}
+
+.italic {
+    font-style: italic;
+}
+
 .left-container {
     display: flex;
     flex-direction: column;
@@ -86,12 +111,22 @@ label {
     background-size: 100% 100vh;
     height: 100vh;
     width: 40vw;
+    min-height: 100%;
 }
 
 .left-container > div {
     text-align: center;
     display: flex;
     justify-content: center;
+}
+
+.password-content::after {
+    color: red;
+    font-size: 0.7rem;
+    position: relative;
+    top: 3px;
+    left: 10px;
+    content: "*Passwords do not match";
 }
 
 .right-container {
@@ -109,6 +144,21 @@ label {
 .right-container > * {
     padding-left: 3vw;
     padding-right: 3vw;
+}
+
+.submit-button {
+    padding: 5px 20px;
+    margin-bottom: 5px;
+    background-color: rgb(148, 2, 2);
+    border: 3px solid black;
+    border-radius: 5px;
+    color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: rgb(211, 4, 4);
+    box-shadow: 2px 4px 3px rgb(155, 155, 155, 0.8);
 }
 
 .top > p {
